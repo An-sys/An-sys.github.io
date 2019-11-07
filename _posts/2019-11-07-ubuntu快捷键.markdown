@@ -1,0 +1,20 @@
+---
+layout: post
+title: Ubuntu快捷键
+tags: [frontpage, jekyll, blog]
+
+---
+
+### Ubuntu快捷键
+
+设置->设备->键盘  自定义快捷方式
+
+Ctrl+Alt+T ： 打开终端的快捷键是
+
+Ctrl+Shift+T ： 在终端中打开新的选项卡的快捷键是
+
+Ctrl+Q：关闭应用程序窗口
+
+Ctrl+Alt+箭头：切换工作区
+
+Ctrl+Alt+Del：注销

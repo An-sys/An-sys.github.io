@@ -1,0 +1,65 @@
+---
+layout: post
+title: jekyll
+tags: [frontpage, jekyll, blog]
+
+---
+
+# Jekyll 下载
+
+### 安装Ruby
+
+> apt-get install ruby
+>  ruby -v
+
+### 更新Ruby gem源
+
+> gem sources --remove [https://rubygems.org/](https://link.jianshu.com?t=https://rubygems.org/)
+>  gem source -a [https://gems.ruby-china.org/](https://link.jianshu.com?t=https://gems.ruby-china.org/)
+
+### 安装ruby-dev
+
+> apt-get install ruby-dev
+
+### 安装Jekyll
+
+> gem install jekyll
+
+### 安装Jekyll
+
+> gem install jekyll --verbose
+
+### 创建测试博客
+
+> jekyll new blog
+>  cd blog
+>  jekyll server
+
+
+
+### 报错
+
+```
+Ensure you have `gems: [jekyll-paginate]` in your configuration file.
+```
+
+解决：
+
+```
+在_config.yml文件最后加入gems: [jekyll-paginate]
+```
+
+
+
+```
+ Deprecation: The 'plugins' configurationoption has been renamed to 'plugins_dir'. Please update your config file accordingly
+```
+
+解决：
+
+```
+将_config.yml文件plugins修改为plugins_dir
+```
+
+[报错集锦](https://www.jianshu.com/p/12e7e1f8007e)
+

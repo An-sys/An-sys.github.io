@@ -1,8 +1,0 @@
----
-layout: post
-title: mater
-tags: [frontpage, jekyll, blog]
-
----
-
-wwwwwwwwwwwwwwwwwwwwwwwwwwwww
