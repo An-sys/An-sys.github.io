@@ -1,0 +1,137 @@
+---
+layout: post
+title: Git
+tags: [frontpage, jekyll, blog]
+
+---
+
+## Git 使用
+
+### Git安装
+
+#### 安装
+
+```
+sudo	apt-get		install		git
+```
+
+
+
+#### 配置
+
+版本查看
+
+在`命令界面`输入`git-version`
+
+可以查看到当前Git的版本信息
+
+
+
+全局配置
+
+```
+ 配置用户名：git config [--global] user.name "用户名"
+
+ 配置用户邮箱：git config [--global] user.email "邮箱"
+
+ 查看配置：git config --list
+ 
+--global 全局
+--local  本地
+--system 系统
+```
+
+
+
+### 创建仓库
+
+#### 初始化仓库
+
+```
+git		init
+```
+
+#### 克隆仓库
+
+```
+git		clone	仓库地址
+```
+
+
+
+### 基本命令
+
+```
+创建一个文件：touch	文件名
+
+查看当前的文件状态：git	status
+
+添加到缓存区：git	add  .	添加所有未跟踪的文件到缓存区
+								git add 文件名
+								
+从 `红色文字` 变为 `绿色文字`, 说明已经成功提交给缓存区
+
+提交给仓库：git	commit
+						   git   commit -m 	"描述"
+							
+查看存档列表：git	log							 查看所有存档(完整)
+							   git  log -- oneline      查看所有存档(简单)
+							   git  log -p					    查看存档的具体内容                     
+
+回退版本：git	checkout	版本编号/标签
+				      git	  checkout-   回退到上一个版本
+				   
+查看当前版本：git	show
+
+节点标签：git tag -a 标签名 -m '描述' 				     	   默认最新的版本编号
+					   git tag -a 标签名 -m '描述' 版本编号 	      自主指定版本编号
+
+查看标签列表：git show 标签名
+```
+
+
+
+### 生成、获取秘钥
+
+```
+ssh-keygen -t rsa -C "517377902@qq.com"
+
+cat ~/.ssh/id_rsa.pub
+```
+
+
+
+## 终端操作
+
+```
+cd desktop 		进入到desktop这个文件夹
+cd -                     跳转到上一次所在的路径(类似遥控器的回看功能)
+cd ~                    跳转到用户根目录
+cd ..                    跳转到当前路径的上一层
+cd ../aaa           进入当前所在文件夹同级目录下的aaa文件夹
+ctrl+c                 强制中断程序的执行
+ctrl+z                 将任务中断,但是此任务并没有结束,他仍然在进程中他只是维持挂起的状态
+ls                          列出当前文件夹下所有文件
+pwd                    显示当前目录
+tab                      自动补全
+mkdir                 创建文件夹
+rmdir                  删除空文件夹
+rm                        删除一个普通文件夹，会有提示，要删除的东西是个文件夹
+cat                       查看文件的内容
+
+
+```
+
+```
+_posts 博客内容
+_pages 其他需要生成的网页，如About页
+_layouts 网页排版模板
+_includes 被模板包含的HTML片段，可在_config.yml中修改位置
+assets 辅助资源 css布局 js脚本 图片等
+_data 动态数据
+_sites 最终生成的静态网页
+_config.yml 网站的一些配置信息
+index.html 网站的入口
+
+```
+
