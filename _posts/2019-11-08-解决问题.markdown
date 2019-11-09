@@ -1,0 +1,26 @@
+---
+layout: post
+title: 解决问题
+tags: [frontpage, jekyll, blog]
+---
+
+耳机没有声音
+
+```
+1.在Ubuntu 18.04终端中运行以下命令：
+
+sudo apt-get remove --purge alsa-base pulseaudio
+
+sudo apt-get install alsa-base pulseaudio pavucontrol
+
+sudo alsa force-reload
+
+reboot
+
+2.在上面的 reboot重新启动系统命令执行过后，重新登陆系统，继续执行下面命令：   
+
+sudo apt-get install pavucontrol
+
+pavucontrol
+```
+
